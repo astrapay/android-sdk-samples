@@ -17,6 +17,7 @@ This repository is an example about how to implement AstraPay Sdk in your projec
 You can check the new version on https://search.maven.org/artifact/com.astrapay/android-sdk
 
 3. On your Application file, make sure to extend AstraPaySdkApplication() and setup the sdk on onCreate().
+   
    Make sure add @SuppressLint("MissingSuperCall").
    This setup function require your sdk token and build environment.
 
@@ -44,20 +45,27 @@ class ClientApplication : AstraPaySdkApplication() {
    There is 4 callback that you can use:
 
     1. onComplete(type: EventType)
+       
        This is a listener that you can use to listen when transaction is success.
+       
        There is also 2 EventType that you can use:
+       
        a. EventType.Home --> listener button KEMBALI KE BERANDA / back button from Success Page
+       
        b. EventType.Detail --> listener back button from Detail Page
 
     2. onFailed()
+       
        This is a listener that you can use to listen when transaction is failed, when button
        KEMBALI KE BERANDA is selected.
 
     3. onForbidden()
+       
        This is a listener that you can use to listen when user token is expired and rejected by
        AstraPay system.
 
     4. onCancel()
+       
        This is a listener that you can use to listen when user select back button from Scan QR page.
 
 ```kotlin
