@@ -19,14 +19,14 @@ You can check the new version on https://search.maven.org/artifact/com.astrapay/
 3. On your Application file, make sure to extend AstraPaySdkApplication() and setup the sdk on onCreate().
    
    Make sure add @SuppressLint("MissingSuperCall").
-   This setup function require your sdk token and build environment.
+   This setup function require your sdk token and build environment. Please Request **SDK_TOKEN** to AstraPay and use **AstraPayQris.Build.UAT**
 
 ```kotlin
 class ClientApplication : AstraPaySdkApplication() {
     @SuppressLint("MissingSuperCall")
     override fun onCreate() {
         super.onCreate()
-        AstraPayQris.setup("SDK_TOKEN", AstraPayQris.Build.SIT)
+        AstraPayQris.setup("SDK_TOKEN", AstraPayQris.Build.UAT)
     }
 }
 ```
