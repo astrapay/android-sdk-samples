@@ -8,6 +8,6 @@ class ClientApplication : AstraPaySdkApplication() {
     @SuppressLint("MissingSuperCall")
     override fun onCreate() {
         super.onCreate()
-        AstraPayQris.setup("XTOKEN", AstraPayQris.Build.SIT)
+        AstraPayQris.setup("SDK_TOKEN", AstraPayQris.Build.UAT)
     }
 }
