@@ -67,6 +67,14 @@ class ClientApplication : AstraPaySdkApplication() {
     4. onCancel()
        
        This is a listener that you can use to listen when user select back button from Scan QR page.
+       
+    5. onProcessing()
+    
+        This is a listener that you can use to listen when transaction is processing, when button KEMBALI KE BERANDA is selected.
+    
+    6. onShowHistory()
+    
+        This is a listener that you can use to listen when transaction is processing, when button LIHAT RIWAYAT is selected.
 
 ```kotlin
 class MainActivity : AppCompatActivity(), AstraPayQrisListener {
@@ -89,6 +97,14 @@ class MainActivity : AppCompatActivity(), AstraPayQrisListener {
 
    //On User Cancel Transaction
    override fun onCancel() {
+   }
+   
+    //On User Transaction Processing
+   override fun onProcessing() {
+   }
+   
+    //On User Select Show History Button
+   override fun onShowHistory() {
    }
 }
 ```
