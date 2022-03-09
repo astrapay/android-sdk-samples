@@ -5,12 +5,12 @@ This repository is an example about how to implement AstraPay Sdk in your projec
 ## Steps to implement SDK
 1. Make sure your minimum SDK is 21
 
-2. Put implementation 'com.astrapay:android-sdk:1.0.0' on build.gradle file.
+2. Put implementation 'com.astrapay:android-sdk:1.0.3' on build.gradle file.
 
 ```groovy
    dependencies {      
         //...
-        implementation 'com.astrapay:android-sdk:1.0.0'
+        implementation 'com.astrapay:android-sdk:1.0.3'
     }
 ```
 

@@ -48,4 +48,14 @@ class MainActivity : AppCompatActivity(), AstraPayQrisListener {
     override fun onCancel() {
         Toast.makeText(this, "User cancel the transaction", Toast.LENGTH_SHORT).show()
     }
+
+    //On User Transaction Processing
+    override fun onProcessing() {
+        Toast.makeText(this, "Transaction Processing", Toast.LENGTH_SHORT).show()
+    }
+
+    //On User Select Show History Button
+    override fun onShowHistory() {
+        Toast.makeText(this, "User select show history button", Toast.LENGTH_SHORT).show()
+    }
 }
